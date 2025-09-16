@@ -8,7 +8,7 @@
 import SwiftUI
 import SafariServices
 
-struct HadleyNameCardFront: View {   // ✅ struct 名稱要對應檔案名
+struct HadleyNameCardFront: View {
     let contact: Contact
     @State private var showingSafari = false
 

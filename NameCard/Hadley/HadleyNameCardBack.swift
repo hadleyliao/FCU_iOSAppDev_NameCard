@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HadleyNameCardBack: View {   // ✅ struct 名稱要對應檔案名
+struct HadleyNameCardBack: View {
     let contact: Contact
     
     var body: some View {
@@ -29,7 +29,7 @@ struct HadleyNameCardBack: View {   // ✅ struct 名稱要對應檔案名
                 
                 // QR Code 區塊
                 VStack(spacing: 12) {
-                    HadleyQRCodeView(contactInfo: contact.toVCard()) // ✅ 換新的名稱
+                    HadleyQRCodeView(contactInfo: contact.toVCard())
                         .frame(width: 80, height: 80)
                     
                     Text("SCAN TO CONNECT")

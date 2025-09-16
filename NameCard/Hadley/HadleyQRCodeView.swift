@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreImage.CIFilterBuiltins
 
-struct HadleyQRCodeView: View {   // ✅ struct 名稱要對應檔案名
+struct HadleyQRCodeView: View {
     let contactInfo: String
 
     var body: some View {

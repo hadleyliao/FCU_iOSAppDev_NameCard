@@ -16,6 +16,5 @@ struct HadleySafariView: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {
-        // 這裡通常不需要做事，除非你想要動態更新 Safari 狀態
     }
 }

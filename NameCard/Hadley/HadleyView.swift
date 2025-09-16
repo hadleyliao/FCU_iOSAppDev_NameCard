@@ -26,10 +26,10 @@ struct HadleyView: View {
             // Name Card
             ZStack {
                 if !isFlipped {
-                    HadleyNameCardFront(contact: contact)   // ✅ 用新的 struct 名稱
+                    HadleyNameCardFront(contact: contact)
                         .opacity(isFlipped ? 0 : 1)
                 } else {
-                    HadleyNameCardBack(contact: contact)    // ✅ 用新的 struct 名稱
+                    HadleyNameCardBack(contact: contact)
                         .opacity(isFlipped ? 1 : 0)
                 }
             }
