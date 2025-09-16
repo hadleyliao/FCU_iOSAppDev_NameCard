@@ -69,8 +69,14 @@ struct PersonDetailView: View {
                     HarryView(contact: contact)
                 case "roger":
                     RogerView(contact: contact)
+                case "Zoe":
+                    ZoeView(contact: contact)  
                 default:
-                    HarryView(contact: contact) // Default fallback
+                    if let nameCard = person.nameCard {
+                        AnyView(nameCard)
+                    } else {
+                        HarryView(contact: contact) // Default fallback
+                    }
                 }
             } else {
                 VStack {
